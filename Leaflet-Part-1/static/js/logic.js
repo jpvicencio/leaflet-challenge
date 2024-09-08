@@ -9,16 +9,15 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Function to get color based on depth
-// Function to get color based on depth
 function getColor(depth) {
-    return depth > 1000 ? '#004529' :  // Darkest green for deepest depths
-           depth > 500  ? '#006837' :
-           depth > 200  ? '#8c2d04' :
-           depth > 100  ? '#f03b20' :
-           depth > 50   ? '#fd8d3c' :
-           depth > 20   ? '#feb24c' :
-           depth > 10   ? '#fed976' :
-                          '#ffeda0';  // Lightest color for shallow depths
+    return depth > 1000 ? '#800026' :  // Dark red for the deepest depths
+           depth > 500  ? '#BD0026' :
+           depth > 200  ? '#E31A1C' :
+           depth > 100  ? '#FC4E2A' :
+           depth > 50   ? '#FD8D3C' :
+           depth > 20   ? '#FEB24C' :
+           depth > 10   ? '#FED976' :
+                          '#D9F0A3';  // Light green for shallow depths
   }
 
 // Function to style markers
