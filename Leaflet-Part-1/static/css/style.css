@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.legend {
+  background: white;
+  padding: 6px 8px;
+  font: 14px Arial, Helvetica, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  z-index: 1000; 
+  width: auto; 
+  max-width: 200px; 
+}
+
+.legend i {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+  opacity: 0.8;
+  vertical-align: middle; 
+}
+
+.legend div {
+  margin-bottom: 4px; 
+  display: flex;
+  align-items: center; 
+}
+
+
+
